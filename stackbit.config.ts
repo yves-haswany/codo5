@@ -10,8 +10,9 @@ export default defineStackbitConfig({
         new ContentfulContentSource({
             spaceId: process.env.CONTENTFUL_SPACE_ID!,
             environment: process.env.CONTENTFUL_ENVIRONMENT || 'master',
+            accesssToken:process.env.CONTENFUL_ACCESS_TOKEN,
             previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN!,
-            accessToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!
+            managementToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!
         }),
     ],
     "postInstallCommand": "npm i --no-save @stackbit/types @stackbit/cms-contentful"
