@@ -42,3 +42,26 @@ export default defineStackbitConfig({
   modelExtensions: [{ name: 'invoice', type: 'invoice', urlPath: '/{slug}' }],
   // other properties ...
 }
+export default defineStackbitConfig({
+  contentSources: [Contentful]
+  modelExtensions: {
+    {
+      name: 'hero_section',
+      fields: [
+        {
+          type: 'Date/Time',
+          name: 'Start Date',
+          label: 'Start_Date',
+          group: 'design',
+          controlType: 'button-group',
+          options: [
+            { label: 'Narrow', value: 'narrow' },
+            { label: 'Wide', value: 'wide' },
+            { label: 'Full', value: 'full' },
+          ],
+        },
+      ],
+    },
+  },
+  // other properties ...
+})
