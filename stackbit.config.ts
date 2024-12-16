@@ -38,7 +38,7 @@ export default defineStackbitConfig({
   }
 });
 export default defineStackbitConfig({
-  contentSources: [ /* ... */ ]
+  contentSources: [Contentful]
   modelExtensions: [{ name: 'invoice', type: 'invoice', urlPath: '/{slug}' }],
   // other properties ...
 }
