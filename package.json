@@ -17,7 +17,7 @@
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "unique-names-generator": "^4.7.1",
-        "@netlify/plugin-next":"5.9.0"
+        "@netlify/plugin-nextjs":"5.9.0"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.18",
