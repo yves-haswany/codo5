@@ -54,11 +54,6 @@ export default defineStackbitConfig({
           label: 'Start_Date',
           group: 'design',
           controlType: 'button-group',
-          options: [
-            { label: 'Narrow', value: 'narrow' },
-            { label: 'Wide', value: 'wide' },
-            { label: 'Full', value: 'full' },
-          ],
         },
       ],
     },
