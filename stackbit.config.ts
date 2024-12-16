@@ -34,29 +34,6 @@ export default defineStackbitConfig({
     })
   ],
   models: {
-    page: { type: "page", urlPath: "/{slug}" }
+    page: { name:"Invoice", type: "invoice", urlPath: "/{slug}" }
   }
 });
-export default defineStackbitConfig({
-  contentSources: [Contentful]
-  modelExtensions: [{ name: 'invoice', type: 'invoice', urlPath: '/{slug}' }],
-  // other properties ...
-}
-export default defineStackbitConfig({
-  contentSources: [Contentful]
-  modelExtensions: {
-    {
-      name: 'hero_section',
-      fields: [
-        {
-          type: 'Date/Time',
-          name: 'Start Date',
-          label: 'Start_Date',
-          group: 'design',
-          controlType: 'button-group',
-        },
-      ],
-    },
-  },
-  // other properties ...
-})
