@@ -10,12 +10,15 @@
     },
     "dependencies": {
         "@netlify/blobs": "^8.1.0",
+        "@netlify/plugin-nextjs": "^5.9.0",
         "blobshape": "^1.0.0",
         "bright": "^0.8.5",
+        "contentful": "^11.3.2",
+        "contentful-cli": "^3.7.1",
         "markdown-to-jsx": "^7.4.5",
-        "next": "15.0.4",
-        "react": "18.3.1",
-        "react-dom": "18.3.1",
+        "next": "^15.1.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
         "unique-names-generator": "^4.7.1"
     },
     "devDependencies": {
