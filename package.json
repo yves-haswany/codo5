@@ -9,7 +9,7 @@
         "start": "next start",
         "lint": "next lint"
     }
-},
+}
     "dependencies": {
         "@netlify/blobs": "^8.1.0",
         "blobshape": "^1.0.0",
