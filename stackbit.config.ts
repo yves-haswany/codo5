@@ -33,7 +33,9 @@ export default defineStackbitConfig({
       useWebhookForContentUpdates: true
     })
   ],
-  models: {
-    page: { name:"Invoice", type: "Invoice", urlPath: "https://app.contentful.com/spaces/j86lyi7eedea/entries/3XRlzjcnVHCN5lGoe65L0q" }
-  }
+  export default defineStackbitConfig({
+  contentSources: [ Contentful ]
+  modelExtensions: [{ name: 'Invoice', type: 'Invoice', urlPath: 'https://app.contentful.com/spaces/j86lyi7eedea/entries/3XRlzjcnVHCN5lGoe65L0q' }],
+  // other properties ...
+})
 });
