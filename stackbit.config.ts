@@ -34,6 +34,6 @@ export default defineStackbitConfig({
     })
   ],
   models: {
-    page: { name:"Invoice", type: "invoice", urlPath: "/{slug}" }
+    page: { name:"Invoice", type: "Invoice", urlPath: "https://app.contentful.com/spaces/j86lyi7eedea/entries/3XRlzjcnVHCN5lGoe65L0q" }
   }
 });
