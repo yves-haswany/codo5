@@ -30,7 +30,7 @@ export default defineStackbitConfig({
       environment: process.env.CONTENTFUL_ENVIRONMENT!,
       previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN!,
       accessToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!,
-      useWebhookForContentUpdates: true
+      useWebhookForContentUpdates: true,
     })
   ],
   export default defineStackbitConfig({
