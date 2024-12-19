@@ -35,7 +35,7 @@ export default defineStackbitConfig({
   ],
   export default defineStackbitConfig({
   contentSources: [ Contentful ]
-  modelExtensions: [{ name: 'Invoice', type: 'Invoice', urlPath: 'https://app.contentful.com/spaces/j86lyi7eedea/entries/3XRlzjcnVHCN5lGoe65L0q' }],
+  modelExtensions: [{ name: 'Untitled', type: 'Invoice', urlPath: '/{slug}' }],
   // other properties ...
 })
 });
