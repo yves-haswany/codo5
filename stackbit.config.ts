@@ -21,7 +21,10 @@ import { defineStackbitConfig } from "@stackbit/types";
 import { ContentfulContentSource } from "@stackbit/cms-contentful";
 
 export const addconfig = ({
-       contentful
+      
+       contentSources: [ Contentful ]
+       modelExtensions: [{ name: 'Untitled', type: 'Invoice', urlPath: '/{slug}' }],
+    
       
     })
   ],
