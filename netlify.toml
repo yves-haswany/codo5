@@ -1,6 +1,6 @@
 [build]
   publish = ".next"
-  command = "npm run build"
+  command = "npm run build && curl -X POST https://api.netlify.com/build_hooks/67652b25ad76802751744f0c "
 [dev]
   command = "npm run dev"
   port = 8888
