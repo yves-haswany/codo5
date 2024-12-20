@@ -14,12 +14,15 @@ export default defineStackbitConfig({
             previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN!,
             managementToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!,
             useWebhookForContentUpdates: true, 
-              contentSources: [ Contentful ]
-              modelExtensions: [{ name: 'Untitled', type: 'Invoice', urlPath: '/{slug}' }],
+           
     ],
             
         }),
 })
 import { defineStackbitConfig } from "@stackbit/types";
 import { ContentfulContentSource } from "@stackbit/cms-contentful";
+export const addconfig = {
+       contentSources: [ Contentful ]
+              modelExtensions: [{ name: 'Untitled', type: 'Invoice', urlPath: '/{slug}' }],
+    }
 });
