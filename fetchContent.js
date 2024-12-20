@@ -3,9 +3,9 @@ const contentful = require('contentful');
 
 // Create a Contentful client instance
 const client = contentful.createClient({
-  space: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,  // For published content
-  environment: process.env.CONTENTFUL_ENVIRONMENT || 'master',
+  space: process.env.CONTENTFUL_SPACE_ID!,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,  // For published content
+  environment: process.env.CONTENTFUL_ENVIRONMENT!,
 });
 
 // Fetch content
