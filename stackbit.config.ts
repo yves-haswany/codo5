@@ -1,4 +1,4 @@
-iimport { defineStackbitConfig } from '@stackbit/types';
+import { defineStackbitConfig } from '@stackbit/types';
 import { ContentfulContentSource } from '@stackbit/cms-contentful';
 
 export default defineStackbitConfig({
