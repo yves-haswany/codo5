@@ -18,6 +18,7 @@
         "react": "19.0.0",
         "react-dom": "19.0.0",
         "unique-names-generator": "^4.7.1",
+        "@stackbit/cms-contentful":"3.1.19",
         "contentful-management":"11.3.3"
     },
     "devDependencies": {
