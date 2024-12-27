@@ -16,7 +16,8 @@
         "next": "15.1.2",
         "react": "19.0.0",
         "react-dom": "19.0.0",
-        "unique-names-generator": "^4.7.1"
+        "unique-names-generator": "^4.7.1",
+        "contentful":"3.7.1"
     
     },
     "devDependencies": {
