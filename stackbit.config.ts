@@ -12,7 +12,7 @@ export default defineStackbitConfig({
             previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN!,
             accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
             managementToken:process.env.CONTENTFUL_MANAGEMENT_TOKEN!,
-            useWebhookForContentUpdates: true,
+            useWebhookForContentUpdates: true
         }),
     ],
     modelExtensions: [
