@@ -20,7 +20,7 @@
         "react-dom": "19.0.0",
         "node":"20.0.0",
         "unique-names-generator": "^4.7.1",
-        "contentful":"1.0.30"
+        "contentful":"3.7.1"
     
     },
     "devDependencies": {
