@@ -11,17 +11,17 @@ export default defineStackbitConfig({
             environment: process.env.CONTENTFUL_ENVIRONMENT! || 'master',
             previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN!,
             accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
-            managementToken:process.env.CONTENTFUL_MANAGEMENT_TOKEN!,
+            managementToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!,
             useWebhookForContentUpdates: true
-        }),
+        })
     ],
     modelExtensions: [
         {
             name: "Untitled",
             type: "Invoice",
-            urlPath: "/{slug}",
-        },
+            urlPath: "/{slug}"
+        }
     ],
-    postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful",
+    postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
 });
 
