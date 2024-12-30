@@ -11,7 +11,7 @@
     "dependencies": {
         "@netlify/blobs": "^8.1.0",
         "@netlify/plugin-nextjs": "^5.9.2",
-        "nanoid":"5.0.9",
+        "nanoid":"3.3.8",
         "blobshape": "^1.0.0",
         "bright": "^0.8.5",
         "markdown-to-jsx": "^7.7.2",
