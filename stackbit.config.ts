@@ -13,7 +13,7 @@ export default defineStackbitConfig({
             accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
             managementToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!,
             useWebhookForContentUpdates: true
-        })
+        
     ],
     modelExtensions: [
         {
