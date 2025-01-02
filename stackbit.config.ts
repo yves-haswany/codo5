@@ -19,7 +19,7 @@ export default defineStackbitConfig({
         {
             name: "Untitled",
             type: "Invoice",
-            urlPath: "/{slug}"
+            urlPath: "https://app.contentful.com/spaces/j86lyi7eedea/entries/3XRlzjcnVHCN5lGoe65L0q}"
         }
     ],
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
