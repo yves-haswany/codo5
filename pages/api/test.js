@@ -1,4 +1,3 @@
-
 import { createClient } from "contentful";
 
 export default async function handler(req, res) {
