@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@netlify/blobs": "^8.1.0",
+        "stackbit":"0.3.127",
         "@netlify/plugin-nextjs": "^5.9.2",
         "nanoid":"3.3.8",
         "blobshape": "^1.0.0",
