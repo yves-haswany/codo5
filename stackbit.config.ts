@@ -13,7 +13,7 @@ export default defineStackbitConfig({
             accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
             managementToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!,
             useWebhookForContentUpdates: true
-        
+        }) // Corrected: Closing the configuration object properly
     ],
     modelExtensions: [
         {
@@ -24,4 +24,3 @@ export default defineStackbitConfig({
     ],
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
 });
-
