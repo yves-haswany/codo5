@@ -13,7 +13,7 @@
         "@netlify/plugin-nextjs": "^5.9.2",
         "nanoid":"5.0.9",
         "blobshape": "^1.0.0",
-        "stackbit":"0.3.127",
+        
         "bright": "^0.8.5",
         "markdown-to-jsx": "^7.7.2",
         "next": "15.1.0",
