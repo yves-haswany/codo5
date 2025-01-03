@@ -9,7 +9,7 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "stackbit":"0.3.127",
+        
         "@netlify/blobs": "^8.1.0",
 
         "@netlify/plugin-nextjs": "^5.9.2",
