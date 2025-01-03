@@ -17,8 +17,9 @@
         "markdown-to-jsx": "^7.7.2",
         "next": "15.1.0",
         "react": "19.0.0",
-        "node":"20.0.0",
+        "node":"20.18.0",
         "react-dom": "19.0.0",
+        "npm":"11.0.0",
         "unique-names-generator": "^4.7.1",
         "contentful":"3.7.1"
        
