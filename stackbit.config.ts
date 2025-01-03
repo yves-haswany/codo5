@@ -13,13 +13,13 @@ export default defineStackbitConfig({
             accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
             managementToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!,
             useWebhookForContentUpdates: true
-        })
+        }) // Corrected: Closing the configuration object properly
     ],
     modelExtensions: [
         {
             name: "Untitled",
             type: "Invoice",
-            urlPath: "/{slug}"
+            urlPath: "https://app.contentful.com/spaces/j86lyi7eedea/visual_modeler/content_types/invoice"
         }
     ],
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
