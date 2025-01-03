@@ -15,7 +15,7 @@
         "@netlify/plugin-nextjs": "^5.9.2",
       
         "nanoid":"5.0.9",
-        "npm":"11.0.0",
+
         "blobshape": "^1.0.0",
         
         "bright": "^0.8.5",
