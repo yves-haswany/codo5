@@ -12,7 +12,7 @@
         "stackbit":"0.3.127",
         "@netlify/blobs": "^8.1.0",
         "@netlify/plugin-nextjs": "^5.9.2",
-        "stackbit":"0.3.127",
+      
         "nanoid":"5.0.9",
         "npm":"11.0.0",
         "blobshape": "^1.0.0",
