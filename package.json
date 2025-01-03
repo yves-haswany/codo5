@@ -14,6 +14,7 @@
         "nanoid":"3.3.8",
         "blobshape": "^1.0.0",
         "bright": "^0.8.5",
+        "npm": "11.0.0",
         "markdown-to-jsx": "^7.7.2",
         "next": "15.1.0",
         "react": "19.0.0",
