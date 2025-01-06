@@ -7,6 +7,9 @@ export default defineStackbitConfig({
     ssgName: "nextjs",
     contentSources: [
         new ContentfulContentSource({
+            name: 'contentful',
+            type: '@stackbit/cms-contentful',
+
             spaceId: process.env.CONTENTFUL_SPACE_ID!,
             environment: process.env.CONTENTFUL_ENVIRONMENT! || 'master',
             previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN!,
