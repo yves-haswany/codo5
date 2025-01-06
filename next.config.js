@@ -2,7 +2,7 @@
 const nextConfig = {
   experimental: {
 
-    serverActions: true, // This must be an object, not a boolean
+    serverActions: true,
   },
 };
 
