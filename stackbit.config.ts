@@ -2,7 +2,7 @@ import { defineStackbitConfig } from '@stackbit/types';
 import { ContentfulContentSource } from '@stackbit/cms-contentful';
 
 export default defineStackbitConfig({
-    stackbitVersion: "0.3.127",
+    stackbitVersion: "~0.6.0",
     nodeVersion: "20.18.0",
     ssgName: "nextjs",
     contentSources: [
