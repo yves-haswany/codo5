@@ -1,14 +1,16 @@
- const contentful = require('contentful');
+require('dotenv').config();
+const contentful = require('contentful'); // Content Delivery API
 
-   // Initialize the Contentful client
-   const client = contentful.createClient({
-     space: process.env.CONTENTFUL_SPACE_ID,
-     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-     environment: process.env.CONTENTFUL_ENVIRONMENT || 'master',
-   });
+const client = contentful.createClient({
+  space: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+});
 
-   // Fetch entries to test the connection
-   client
-     .getEntries()
-     .then((entries) => console.log('Contentful connection successful:', entries.items))
-     .catch((error) => console.error('Error connecting to Contentful:', error.message));
+(async () => {
+  try {
+    const entries = await client.getEntries();
+    console.log('Contentful entries fetched successfully:', entries.items);
+  } catch (err) {
+    console.error('Error connecting to Contentful:', err.message);
+  }
+})();
