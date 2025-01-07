@@ -1,6 +1,6 @@
 [build]
   publish = ".next"
-  command = "npm run build && node testContentful.js"
+  command = "npm run build"
   environment = {NODE_VERSION = "20.18.1"}
 [dev]
   command = "npm run dev"
