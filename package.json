@@ -15,7 +15,7 @@
         "@netlify/content-engine": "^1.6.0",
         "@netlify/plugin-nextjs": "^5.9.2",
         "@stackbit/cms-core": "^3.1.19",
-        "axios": "1.7.8",
+        "axios": ">=0.21.4",
         "blobshape": "^1.0.0",
         "bright": "^1.0.0",
         "contentful": "^11.4.0",
