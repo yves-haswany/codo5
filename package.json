@@ -29,7 +29,7 @@
         "react-dom": "18.3.1",
         
         "unique-names-generator": "^4.7.1",
-        "contentful":"^10.6.21"
+        "contentful":"11.4.0"
        
     },
     "devDependencies": {
@@ -41,6 +41,6 @@
         "tailwindcss": "^3.4.17"
     },
     "engines": {
-        "node": "20.18.0"
+        "node": "20.18.1"
     }
 }
