@@ -3,6 +3,6 @@
 stackbitVersion: ~0.3.0
 ssgName: nextjs
 cmsName: contentful
-nodeVersion: '12'
+nodeVersion: '20.18.0'
 publishDir: out
 cacheDir: /temp/.stackbit/cache
