@@ -46,7 +46,7 @@
         "react-dom": "^18.3.1",
         "rimraf": "^6.0.1",
         "snyk": "^1.1294.3",
-        "stackbit": "~0.6.0"
+        "stackbit": "0.0.0"
 
     },
     "devDependencies": {
