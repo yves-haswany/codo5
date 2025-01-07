@@ -26,6 +26,10 @@ require('dotenv').config(); // Load environment variables
        console.log('Entries:', entries.items);
      } catch (error) {
        console.error('Error fetching entries:', error.message);
-     }
+     } 
+      console.log('ACCESS TOKEN:', process.env.CONTENTFUL_ACCESS_TOKEN);
+     console.log('SPACE ID:', process.env.CONTENTFUL_SPACE_ID);
+
+      
    })();
 
