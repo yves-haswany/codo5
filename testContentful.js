@@ -14,3 +14,6 @@ const client = contentful.createClient({
     console.error('Error connecting to Contentful:', err.message);
   }
 })();
+CONTENTFUL_ACCESS_TOKEN=hgeSFlgf0SLX41FZ5Z_nBVcuTFUpzV5dEbrhBYCCiU0;
+CONTENTFUL_SPACE_ID= j86lyi7eedea;
+
