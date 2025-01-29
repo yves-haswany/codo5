@@ -3,12 +3,12 @@ require('dotenv').config(); // Load environment variables
    const contentful = require('contentful');
 
    // Retrieve the access token and space ID from environment variables
-   const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN;
+   const accessToken = process.env.CONTENTFUL_MANAGEMENT_TOKEN;
    const space = process.env.CONTENTFUL_SPACE_ID;
 
    // Check if the environment variables are set
    if (!accessToken || !space) {
-     console.error('Error: CONTENTFUL_ACCESS_TOKEN or CONTENTFUL_SPACE_ID is missing in the environment variables.');
+     console.error('Error: CONTENTFUL_MANAGEMENT_TOKEN or CONTENTFUL_SPACE_ID is missing in the environment variables.');
      process.exit(1);
    }
 
@@ -27,7 +27,7 @@ require('dotenv').config(); // Load environment variables
      } catch (error) {
        console.error('Error fetching entries:', error.message);
      } 
-      console.log('ACCESS TOKEN:', process.env.CONTENTFUL_ACCESS_TOKEN);
+      console.log('ACCESS TOKEN:', process.env.CONTENTFUL_MANAGEMENT_TOKEN);
      console.log('SPACE ID:', process.env.CONTENTFUL_SPACE_ID);
 
       
