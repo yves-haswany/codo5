@@ -19,9 +19,9 @@ export default defineStackbitConfig({
     ],
     modelExtensions: [
         {
-            name: "Untitled",
-            type: "Invoice",
-            urlPath: "https://app.contentful.com/spaces/j86lyi7eedea/visual_modeler/content_types/invoice"
+            name: "homePage",
+            type: "page",
+            urlPath: "/{slug}"
         }
     ],
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
