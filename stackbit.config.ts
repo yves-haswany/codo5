@@ -3,7 +3,7 @@ import { ContentfulContentSource } from '@stackbit/cms-contentful';
 
 export default defineStackbitConfig({
     stackbitVersion: "~0.6.0",
-    nodeVersion: "20.18.0",
+    nodeVersion: "20.18.1",
     ssgName: "nextjs",
     contentSources: [
         new ContentfulContentSource({
@@ -12,8 +12,8 @@ export default defineStackbitConfig({
             spaceId: process.env.CONTENTFUL_SPACE_ID!,
             environment: process.env.CONTENTFUL_ENVIRONMENT! || 'master',
             previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN!,
-            accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
-            managementToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!,
+            accessToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!!,
+            
             useWebhookForContentUpdates: true
         }) // Corrected: Closing the configuration object properly
     ],
