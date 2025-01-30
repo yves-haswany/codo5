@@ -32,10 +32,10 @@ export default function Page() {
         <main className="flex flex-col gap-8 sm:gap-16">
             <section className="flex flex-col items-start gap-3 sm:gap-4">
                 <ContextAlert />
-                <h1 className="mb-0">Codo-Invoicing and billing for electric vehicle chargine</h1>
+                <h1 className="mb-0">Netlify Platform Starter - Next.js</h1>
                 <p className="text-lg">Get started with Next.js and Netlify in seconds.</p>
                 <Link
-                    href="https://app.contentful.com/spaces/747xs9w91eto/entries/4SElkz101oeeuUyTB7Djy"
+                    href="https://docs.netlify.com/frameworks/next-js/overview/"
                     className="btn btn-lg btn-primary sm:btn-wide"
                 >
                     Read the Docs
