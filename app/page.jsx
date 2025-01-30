@@ -35,7 +35,7 @@ export default function Page() {
                 <h1 className="mb-0">Codo-Invoicing and billing for electric vehicle chargine</h1>
                 <p className="text-lg">Get started with Next.js and Netlify in seconds.</p>
                 <Link
-                    href="https://docs.netlify.com/frameworks/next-js/overview/"
+                    href="https://app.contentful.com/spaces/747xs9w91eto/entries/4SElkz101oeeuUyTB7Djy"
                     className="btn btn-lg btn-primary sm:btn-wide"
                 >
                     Read the Docs
