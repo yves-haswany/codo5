@@ -33,9 +33,9 @@ export default function Page() {
             <section className="flex flex-col items-start gap-3 sm:gap-4">
                 <ContextAlert />
                 <h1 className="mb-0">Codo-Invoicing and billing for electric vehicle recharging</h1>
-                <p className="text-lg">Get started with Next.js and Netlify in seconds.</p>
+                <p className="text-lg">Your friendly online billing service</p>
                 <Link
-                    href="https://docs.netlify.com/frameworks/next-js/overview/"
+                    href="https://app.contentful.com/spaces/747xs9w91eto/entries/4SElkz101oeeuUyTB7Djy"
                     className="btn btn-lg btn-primary sm:btn-wide"
                 >
                     Read the Docs
