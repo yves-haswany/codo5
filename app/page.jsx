@@ -35,7 +35,7 @@ export default function Page() {
                 <h1 className="mb-0">Codo-Invoicing and billing for electric vehicle recharging</h1>
                 <p className="text-lg">Your friendly online billing service</p>
                 <Link
-                    href="https://app.contentful.com/spaces/747xs9w91eto/entries/4SElkz101oeeuUyTB7Djy"
+                    href="https://app.contentful.com/spaces/747xs9w91eto/entries/4SElkz101oeeuUyTB7Djy2?focusedField=title"
                     className="btn btn-lg btn-primary sm:btn-wide"
                 >
                   Go to the home page
