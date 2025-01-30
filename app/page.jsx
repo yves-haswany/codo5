@@ -38,7 +38,7 @@ export default function Page() {
                     href="https://app.contentful.com/spaces/747xs9w91eto/entries/4SElkz101oeeuUyTB7Djy"
                     className="btn btn-lg btn-primary sm:btn-wide"
                 >
-                    Read the Docs
+                  Go to the home page
                 </Link>
             </section>
             {!!ctx && (
