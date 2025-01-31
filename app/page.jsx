@@ -57,7 +57,7 @@ export default function Page() {
                 <h1 data-sb-field-path="title">Home Page</h1>
             </div>
             {/* !!cards?.length && <CardsGrid cards={cards} /> */}
-        </main>
+
         </main>
     );
 }
