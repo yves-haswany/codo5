@@ -1,8 +1,0 @@
-[build]
-  publish = ".next"
-  command = "npm run build"
-  environment = {NODE_VERSION = "20.18.1"}
-[dev]
-  command = "npm run dev"
-  port = 8888
-  publish = ".next"
