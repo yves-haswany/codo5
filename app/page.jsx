@@ -53,6 +53,11 @@ export default function Page() {
                 <Markdown content={postDynamicContentExplainer} />
             </section>
             {/* !!cards?.length && <CardsGrid cards={cards} /> */}
+            <div data-sb-object-id="1">
+                <h1 data-sb-field-path="title">Home Page</h1>
+            </div>
+            {/* !!cards?.length && <CardsGrid cards={cards} /> */}
+        </main>
         </main>
     );
 }
