@@ -47,6 +47,7 @@
         "react-dom": "^18.3.1",
         "rimraf": "^6.0.1",
         "snyk": "^1.1294.3",
+        "jest-coverage": "latest",
         "stackbit": "0.0.0"
 
     },
