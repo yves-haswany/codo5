@@ -2,7 +2,8 @@
 command = "npm run dev"
 port = 8888
 publish = ".next"
-
+[test]
+   command = "npm test"
 [build]
 publish = ".next"
 command = "npm run build"
