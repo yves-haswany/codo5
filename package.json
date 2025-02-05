@@ -3,7 +3,9 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "test": "jest",
+
+        "test" : "jest",
+
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
@@ -47,6 +49,7 @@
         "react-dom": "^18.3.1",
         "rimraf": "^6.0.1",
         "snyk": "^1.1294.3",
+        "puppeteer":"latest",
         "stackbit": "0.0.0"
 
     },

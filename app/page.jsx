@@ -32,13 +32,13 @@ export default function Page() {
         <main className="flex flex-col gap-8 sm:gap-16">
             <section className="flex flex-col items-start gap-3 sm:gap-4">
                 <ContextAlert />
-                <h1 className="mb-0">Netlify Platform Starter - Next.js</h1>
-                <p className="text-lg">Get started with Next.js and Netlify in seconds.</p>
+                <h1 className="mb-0">Codo-Invoicing and billing for electric vehicle recharging</h1>
+                <p className="text-lg">Your friendly online billing service</p>
                 <Link
-                    href="https://docs.netlify.com/frameworks/next-js/overview/"
+                    href="https://app.contentful.com/spaces/747xs9w91eto/entries/4SElkz101oeeuUyTB7Djy2?focusedField=title"
                     className="btn btn-lg btn-primary sm:btn-wide"
                 >
-                    Read the Docs
+                  Go to the home page
                 </Link>
             </section>
             {!!ctx && (
@@ -53,6 +53,11 @@ export default function Page() {
                 <Markdown content={postDynamicContentExplainer} />
             </section>
             {/* !!cards?.length && <CardsGrid cards={cards} /> */}
+            <div data-sb-object-id="1">
+                <h1 data-sb-field-path="title">Home Page</h1>
+            </div>
+            {/* !!cards?.length && <CardsGrid cards={cards} /> */}
+
         </main>
     );
 }
