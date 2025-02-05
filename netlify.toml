@@ -2,7 +2,8 @@
 command = "npm run dev"
 port = 8888
 publish = ".next"
-
+[test]
+   command = "npm test"
 [build]
 publish = ".next"
 command = "npm run build"
@@ -10,8 +11,7 @@ command = "npm run build"
   [build.environment]
   NODE_VERSION = "20.18.1"
 
-[test]
-   command = "npm test"
+
 
 [[redirects]]
 from = "/_next/image"
