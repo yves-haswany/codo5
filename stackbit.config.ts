@@ -52,5 +52,5 @@ export default defineStackbitConfig({
       })
       .filter(Boolean) as SiteMapEntry[];
   },
-    postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
+    #postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
 });
