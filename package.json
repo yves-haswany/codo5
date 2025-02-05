@@ -7,7 +7,6 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "jest":"latest",
         "lint": "next lint"
     },
     "dependencies": {
@@ -41,6 +40,7 @@
         "react-dom": "^18.3.1",
         "rimraf": "latest",
         "snyk": "^1.1294.3",
+        "jest":"latest",
         "puppeteer": "latest",
         "stackbit": "0.0.0"
     },
