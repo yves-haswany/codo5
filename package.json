@@ -40,8 +40,9 @@
         "react-dom": "^18.3.1",
         "rimraf": "latest",
         "snyk": "^1.1294.3",
-        "puppeteer": "latest",
         "jest":"latest",
+        "puppeteer": "latest",
+
         "stackbit": "0.0.0"
     },
     "devDependencies": {
