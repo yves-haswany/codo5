@@ -40,7 +40,6 @@
         "rimraf": "latest",
         "snyk": "^1.1294.3",
         "puppeteer": "latest",
-         "jest":"latest",
         "stackbit": "0.0.0"
     },
     "devDependencies": {
