@@ -24,6 +24,20 @@ export default defineStackbitConfig({
             urlPath: "/{slug}"
         }
     ],
+      async onContentCreate({ object, model }) {
+    if (model.type !== "page") {
+      return object;
+    }
+    // for pages that already have a pageId field, use that value; if not, generate one
+    const hasPageIdField = !!model.fields?.find(
+      field => field.name === "pageId"
+    );
+    if (hasPageIdField && !object.pageId) {
+      object.pageId = Date.now().toString();
+    }
+
+    return object;
+  },
      siteMap: ({ documents, models }) => {
     // 1. Filter all page models which were defined in modelExtensions
     const pageModels = models.filter((m) => m.type === "page")
