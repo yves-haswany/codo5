@@ -30,10 +30,10 @@ export default defineStackbitConfig({
             .map(document => {
                 const urlModel = (() => {
                     switch (document.modelName) {
-                        case 'homePage':
-                            return 'homePage';
-                        case 'otherPage':
+                        case 'Page':
                             return 'page';
+                        case 'otherPage':
+                            return 'otherPage';
                         default:
                             return null;
                     }
