@@ -37,7 +37,7 @@ export default defineStackbitConfig({
                         default:
                             return null;
                     }
-                })();
+                });
                 if (!urlModel) return null;
                 return {
                     stableId: document.id,
