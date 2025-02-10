@@ -25,7 +25,6 @@ export default defineStackbitConfig({
     ],
     siteMap: ({ documents, models }) => {
         const pageModels = models.filter(m => m.type === "page");
-
         return documents
             .filter(d => pageModels.some(m => m.name === d.modelName))
             .map(document => {
@@ -39,9 +38,7 @@ export default defineStackbitConfig({
                             return null;
                     }
                 })();
-
                 if (!urlModel) return null;
-
                 return {
                     stableId: document.id,
                     urlPath: `/${urlModel}/${document.id}`,
