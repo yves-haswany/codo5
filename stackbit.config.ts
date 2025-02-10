@@ -28,7 +28,6 @@ export default defineStackbitConfig({
      siteMap: ({ documents, models }) => {
     // 1. Filter all page models which were defined in modelExtensions
     const pageModels = models.filter((m) => m.type === "page")
-
     return documents
       // 2. Filter all documents which are of a page model
       .filter((d) => pageModels.some(m => m.name === d.modelName))
@@ -42,8 +41,7 @@ export default defineStackbitConfig({
                 default:
                     return null;
             }
-        })();
-
+        });
         return {
           stableId: document.id,
           urlPath: `/${urlModel}/${document.id}`,
