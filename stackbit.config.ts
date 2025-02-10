@@ -33,7 +33,7 @@ export default defineStackbitConfig({
                         case 'homePage':
                             return 'Home';
                         case 'otherPage':
-                            return 'page';
+                            return 'invoice';
                         default:
                             return null;
                     }
