@@ -36,8 +36,8 @@ export default defineStackbitConfig({
         // Map the model name to its corresponding URL
         const urlModel = (() => {
             switch (document.modelName) {
-                case 'Page':
-                    return 'otherPage';
+                case 'homePage':
+                    return 'Home';
                 default:
                     return null;
             }
