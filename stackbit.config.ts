@@ -31,7 +31,7 @@ export default defineStackbitConfig({
                 const urlModel = (() => {
                     switch (document.modelName) {
                         case 'homePage':
-                            return 'Home';
+                            return 'homePage';
                         case 'otherPage':
                             return 'page';
                         default:
@@ -47,6 +47,11 @@ export default defineStackbitConfig({
                 };
             })
             .filter(Boolean) as SiteMapEntry[];
+    },
+     assetsConfig: {
+        uploadDir: "assets/uploads",
+        publicPath: "/uploads",
+        supportedExtensions: [".jpg", ".jpeg", ".png", ".gif", ".svg"]
     },
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
 });
