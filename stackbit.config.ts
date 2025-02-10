@@ -31,7 +31,7 @@ export default defineStackbitConfig({
                 const urlModel = (() => {
                     switch (document.modelName) {
                         case 'homePage':
-                            return 'home';
+                            return 'Home';
                         case 'otherPage':
                             return 'page';
                         default:
