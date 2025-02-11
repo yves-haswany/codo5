@@ -25,39 +25,8 @@ export default defineStackbitConfig({
                 {
                     id: 'description',
                     name: 'Description',
-                    type: 'RichText',
-                    validations: [
-                        {
-                            enabledNodeTypes: [
-                                "heading-1",
-                                "heading-2",
-                                "heading-3",
-                                "heading-4",
-                                "heading-5",
-                                "heading-6",
-                                "ordered-list",
-                                "unordered-list",
-                                "hr",
-                                "blockquote",
-                                "embedded-entry-block",
-                                "embedded-asset-block",
-                                "hyperlink",
-                                "entry-hyperlink",
-                                "asset-hyperlink",
-                                "embedded-entry-inline"
-                            ],
-                            message: "Only specific node types are allowed"
-                        },
-                        {
-                            enabledMarks: [
-                                "bold",
-                                "italic",
-                                "underline",
-                                "code"
-                            ],
-                            message: "Only specific marks are allowed"
-                        }
-                    ]
+                    type: 'RichText'
+                    // Removed validations property
                 }
             ]
         }
