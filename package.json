@@ -13,23 +13,23 @@
         "@eslint/object-schema": "^2.1.5",
         "@netlify/blobs": "^8.1.0",
         "@netlify/content-engine": "^1.6.0",
-        "@netlify/plugin-nextjs": "^5.9.2",
+        "@netlify/plugin-nextjs": "^5.9.4",
         "@stackbit/cms-core": "^3.1.19",
         "axios": ">=0.21.4",
         "blobshape": "^1.0.0",
-
-        
         "bright": "0.1.0",
-
-       
-
         "markdown-to-jsx": "^7.7.2",
         "next": "^15.1.3",
-        "node":"20.18.1",
-        
+        "node": "20.18.1",
         "unique-names-generator": "^4.7.1",
         "contentful": "^11.4.3",
+<<<<<<< snyk-upgrade-dd866f140a5d611ae143b1e81e4abdfd
         "contentful-cli": "^3.7.3",
+=======
+
+        "contentful-cli": "^3.7.3",
+
+>>>>>>> main
         "core-js": "^3.40.0",
         "dotenv": "^16.4.7",
         "eslint": "^9.17.0",
@@ -39,15 +39,13 @@
         "lodash.pick": "^4.4.0",
         "lodash.set": "^4.3.2",
         "nanoid": "^5.0.9",
-        "next": "^15.1.3",
-        "node": "20.18.1",
-        "npm": "^11.0.0",
+        "npm": "^11.1.0",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
-        "rimraf": "^6.0.1",
+        "rimraf": "latest",
         "snyk": "^1.1294.3",
+        "puppeteer": "latest",
         "stackbit": "0.0.0"
-
     },
     "devDependencies": {
         "@stackbit/cms-contentful": "^1.0.30",
@@ -57,11 +55,8 @@
         "eslint-config-next": "^15.1.3",
         "postcss": "^8.4.49",
         "tailwindcss": "^3.4.17"
-
     },
     "engines": {
         "node": "20.18.1"
-
-
     }
 }
