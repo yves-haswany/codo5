@@ -5,6 +5,9 @@ import { Markdown } from 'components/markdown';
 import { ContextAlert } from 'components/context-alert';
 import { getNetlifyContext } from 'utils';
 
+// Add the ComposablePage component import
+import { ComposablePage } from 'path/to/composable-page'; // Adjust the import path accordingly
+
 const cards = [
     //{ text: 'Hello', linkText: 'someLink', href: '/' }
 ];
@@ -20,7 +23,7 @@ The card content below is fetched by the client-side from \`/quotes/random\` (se
 
 const postDynamicContentExplainer = `
 On Netlify, Next.js Route Handlers are automatically deployed as [Serverless Functions](https://docs.netlify.com/functions/overview/).
-Alternatively, you can add Serverless Functions to any site regardless of framework, with acccess to the [full context data](https://docs.netlify.com/functions/api/).
+Alternatively, you can add Serverless Functions to any site regardless of framework, with access to the [full context data](https://docs.netlify.com/functions/api/).
 
 And as always with dynamic content, beware of layout shifts & flicker! (here, we aren't...)
 `;
@@ -38,7 +41,7 @@ export default function Page() {
                     href="https://app.contentful.com/spaces/747xs9w91eto/entries/4SElkz101oeeuUyTB7Djy2?focusedField=title"
                     className="btn btn-lg btn-primary sm:btn-wide"
                 >
-                  Go to the home page
+                    Go to the home page
                 </Link>
             </section>
             {!!ctx && (
@@ -54,7 +57,8 @@ export default function Page() {
             </section>
             {/* !!cards?.length && <CardsGrid cards={cards} /> */}
             {/* !!cards?.length && <CardsGrid cards={cards} /> */}
-
+            {/* Add the ComposablePage component here */}
+            <ComposablePage id="editable-component" title="Editable Title" />
         </main>
     );
 }
