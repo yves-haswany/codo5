@@ -58,7 +58,7 @@ export default function Page() {
             {/* !!cards?.length && <CardsGrid cards={cards} /> */}
             {/* !!cards?.length && <CardsGrid cards={cards} /> */}
             {/* Add the ComposablePage component here */}
-            <ComposablePage id="editable-component" title="Editable Title" />
+            <ComposablePage id="homePage" title="Codo Home Page" />
         </main>
     );
 }
