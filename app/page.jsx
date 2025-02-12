@@ -6,7 +6,7 @@ import { ContextAlert } from 'components/context-alert';
 import { getNetlifyContext } from 'utils';
 
 // Add the ComposablePage component import
-import { ComposablePage } from 'components/ComposablePage.jsx'; // Adjust the import path accordingly
+import { ComposablePage } from 'components/ComposablePage'; // Adjust the import path accordingly
 
 const cards = [
     //{ text: 'Hello', linkText: 'someLink', href: '/' }
