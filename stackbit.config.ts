@@ -48,10 +48,6 @@ export default defineStackbitConfig({
             })
             .filter(Boolean) as SiteMapEntry[];
     },
-     assetsConfig: {
-        uploadDir: "assets/uploads",
-        publicPath: "/uploads",
-        supportedExtensions: [".jpg", ".jpeg", ".png", ".gif", ".svg"]
-    },
+    
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
 });
