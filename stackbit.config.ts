@@ -20,7 +20,7 @@ export default defineStackbitConfig({
         {
             name: "homePage",
             type: "page",
-            urlPath: "/"
+            urlPath: "/4SElkz101oeeuUyTB7Djy2"
         }
     ],
     siteMap: ({ documents, models }) => {
