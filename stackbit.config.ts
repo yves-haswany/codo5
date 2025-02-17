@@ -21,6 +21,11 @@ export default defineStackbitConfig({
             name: "homePage",
             type: "page",
             urlPath: "/4SElkz101oeeuUyTB7Djy2"
+        },
+        {
+            name: "homePage",
+            type: "page",
+            urlPath:"/4mcWxhKjIr9nTIillZtFI"
         }
     ],
     siteMap: ({ documents, models }) => {
