@@ -41,7 +41,7 @@
         "rimraf": "latest",
         "snyk": "^1.1294.3",
         "puppeteer": "latest",
-        "stackbit": "0.6.0"
+        "stackbit": "0.0.0"
     },
     "devDependencies": {
         "@stackbit/cms-contentful": "^1.0.30",
