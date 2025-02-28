@@ -3,7 +3,7 @@ import { createClient } from "contentful";
 export default async function handler(req, res) {
   // Validate environment variables
   const spaceId = process.env.CONTENTFUL_SPACE_ID;
-  const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN;
+  const accessToken = process.env.CONTENTFUL_MANAGEMENT_TOKEN;
 
   if (!spaceId || !accessToken) {
     return res.status(500).json({

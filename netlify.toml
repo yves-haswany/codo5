@@ -1,8 +1,38 @@
-[build]
-  publish = ".next"
-  command = "npm run build && node testContentful.js"
-  environment = {NODE_VERSION = "20.0.0"}
 [dev]
-  command = "npm run dev"
-  port = 8888
-  publish = ".next"
+command = "npm run dev"
+port = 8888
+publish = ".next"
+[test]
+   command = "npm test"
+[build]
+publish = ".next"
+command = "npm run build"
+
+  [build.environment]
+  NODE_VERSION = "20.18.1"
+
+[[redirects]]
+from = "/_next/image"
+to = "/.netlify/images?url=:url&w=:width&q=:quality"
+status = 200
+
+  [redirects.query]
+  url = ":url"
+  w = ":width"
+  q = ":quality"
+
+[[redirects]]
+from = "/_ipx/*"
+to = "/.netlify/images?url=:url&w=:width&q=:quality"
+status = 200
+
+  [redirects.query]
+  url = ":url"
+  w = ":width"
+  q = ":quality"
+
+[context]
+
+  [context.branch-deploy]
+
+  [context.preview]
