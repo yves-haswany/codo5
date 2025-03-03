@@ -1,0 +1,16 @@
+{
+	"telemetryDisabled": false,
+	"cliId": "b6df7574-60e9-4ceb-b9f2-f5bd9cb2794d",
+	"userId": "67485fccd05a2bb78bd858b8",
+	"users": {
+		"67485fccd05a2bb78bd858b8": {
+			"id": "67485fccd05a2bb78bd858b8",
+			"name": "Charbel Rahme",
+			"email": "crahme@microbms.com",
+			"auth": {
+				"token": "nfc_kjZ4j5N4JDqJgbnvUAPqUqKBSoR8M13v6e92",
+				"github": {}
+			}
+		}
+	}
+}
