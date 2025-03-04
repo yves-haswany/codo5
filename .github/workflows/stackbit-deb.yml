@@ -1,0 +1,28 @@
+name: Stackbit Dev
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run Stackbit dev
+      run: stackbit dev
+      env:
+        NODE_ENV: development
+        CONTENTFUL_SPACE_ID: ${{CONTENTFUL_SPACE_ID }}
+        CONTENTFUL_ENVIRONMENT: ${{CONTENTFUL_ENVIRONMENT }}
+        CONTENTFUL_PREVIEW_TOKEN: ${{CONTENTFUL_PREVIEW_TOKEN }}
+        CONTENTFUL_MANAGEMENT_TOKEN: ${{CONTENTFUL_MANAGEMENT_TOKEN }}
