@@ -35,7 +35,5 @@ status = 200
   q = ":quality"
 
 [context]
-
   [context.branch-deploy]
-
   [context.preview]
