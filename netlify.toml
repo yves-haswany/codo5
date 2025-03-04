@@ -9,6 +9,10 @@ command = "npm run build"
 
   [build.environment]
   NODE_VERSION = "20.18.1"
+  CONTENTFUL_SPACE_ID = "${CONTENTFUL_SPACE_ID}"
+  CONTENTFUL_ENVIRONMENT = "${CONTENTFUL_ENVIRONMENT}"
+  CONTENTFUL_PREVIEW_TOKEN = "${CONTENTFUL_PREVIEW_TOKEN}"
+  CONTENTFUL_MANAGEMENT_TOKEN = "${CONTENTFUL_MANAGEMENT_TOKEN}"
 
 [[redirects]]
 from = "/_next/image"
@@ -31,7 +35,5 @@ status = 200
   q = ":quality"
 
 [context]
-
   [context.branch-deploy]
-
   [context.preview]
