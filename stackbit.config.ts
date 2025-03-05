@@ -20,7 +20,15 @@ export default defineStackbitConfig({
         {
             name: "homePage",
             type: "page",
-            urlPath: "/{slug}"
+            urlPath: "/{slug}",
+            fields: [
+                {
+                    id: 'description',
+                    name: 'Description',
+                    type: 'RichText'
+                    // Removed validations property
+                }
+            ]
         }
     ],
     siteMap: ({ documents, models }) => {
@@ -48,6 +56,6 @@ export default defineStackbitConfig({
             })
             .filter(Boolean) as SiteMapEntry[];
     },
-    
+
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
 });
