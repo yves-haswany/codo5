@@ -1,5 +1,5 @@
   [submodule "codo5"]
-    path = codo5
+    
     url = "https://github.com/yves-haswany/codo5.git"
 [dev]
   command = "npm run dev"
