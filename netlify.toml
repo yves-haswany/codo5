@@ -1,6 +1,4 @@
-  [submodule "codo5"]
-    
-    url = "https://github.com/yves-haswany/codo5"
+ 
 [dev]
   command = "npm run dev"
   port = 8888
