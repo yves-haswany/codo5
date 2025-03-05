@@ -1,6 +1,4 @@
- [submodule "codo5"]
-    path = codo5
-    url = git@github.com:yves-haswany/codo5.git
+
 
 [dev]
   command = "npm run dev"
