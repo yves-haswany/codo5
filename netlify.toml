@@ -37,3 +37,6 @@ status = 200
 [context]
   [context.branch-deploy]
   [context.preview]
+  [submodule "codo5"]
+    path = codo5
+    url = https://github.com/username/codo5.git
