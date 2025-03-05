@@ -38,10 +38,10 @@ export default defineStackbitConfig({
             .map(document => {
                 const urlModel = (() => {
                     switch (document.modelName) {
-                        case 'homePage':
-                            return 'homePage';
-                        case 'otherPage':
+                        case 'Page':
                             return 'page';
+                        case 'otherPage':
+                            return 'otherPage';
                         default:
                             return null;
                     }
@@ -56,6 +56,6 @@ export default defineStackbitConfig({
             })
             .filter(Boolean) as SiteMapEntry[];
     },
-   
+
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
 });
