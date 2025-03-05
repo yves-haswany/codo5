@@ -37,6 +37,8 @@
         "rimraf": "latest",
         "snyk": "^1.1294.3",
         "puppeteer": "latest",
+       "unique-names-generator": "^4.7.1",
+        "markdown-to-jsx": "^7.7.2",
         "stackbit": "0.0.0"
     },
     "devDependencies": {
