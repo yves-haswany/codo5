@@ -1,3 +1,6 @@
+  [submodule "codo5"]
+    path = codo5
+    url = "https://github.com/yves-haswany/codo5.git"
 [dev]
   command = "npm run dev"
   port = 8888
@@ -37,6 +40,4 @@ status = 200
 [context]
   [context.branch-deploy]
   [context.preview]
-  [submodule "codo5"]
-    path = codo5
-    url = "https://github.com/yves-haswany/codo5.git"
+
