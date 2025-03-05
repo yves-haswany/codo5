@@ -39,4 +39,4 @@ status = 200
   [context.preview]
   [submodule "codo5"]
     path = codo5
-    url = https://github.com/username/codo5.git
+    url = "https://github.com/yves-haswamy/codo5.git"
