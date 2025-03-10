@@ -28,16 +28,18 @@
         "inflight": "^1.0.6",
         "lodash.pick": "^4.4.0",
         "lodash.set": "^4.3.2",
+        "markdown-to-jsx": "^7.7.4",
         "nanoid": "^5.0.9",
         "next": "^15.1.3",
         "node": "^23.5.0",
         "npm": "^11.1.0",
+        "puppeteer": "latest",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "rimraf": "latest",
         "snyk": "^1.1294.3",
-        "puppeteer": "latest",
-        "stackbit": "0.0.0"
+        "stackbit": "0.0.0",
+        "unique-names-generator": "^4.7.1"
     },
     "devDependencies": {
         "@stackbit/cms-contentful": "^1.0.30",
