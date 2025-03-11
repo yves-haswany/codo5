@@ -1,7 +1,9 @@
+
+
 [dev]
-command = "npm run dev"
-port = 8888
-publish = ".next"
+  command = "npm run dev"
+  port = 8888
+  publish = ".next"
 
 [build]
 publish = ".next"
@@ -37,3 +39,4 @@ status = 200
 [context]
   [context.branch-deploy]
   [context.preview]
+

@@ -13,6 +13,7 @@ export default defineStackbitConfig({
             environment: process.env.CONTENTFUL_ENVIRONMENT! || 'master',
             previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN!,
             accessToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!,
+
             useWebhookForContentUpdates: true
         })
     ],
@@ -56,6 +57,6 @@ export default defineStackbitConfig({
             })
             .filter(Boolean) as SiteMapEntry[];
     },
-
+   
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
 });
