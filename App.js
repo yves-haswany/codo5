@@ -8,9 +8,10 @@ const App = ({ content }) => {
     const { title, description, featuredImage, sections, footer } = content.fields;
 
     return (
-        <div style={{ backgroundImage: `url(${featuredImage.fields.file.url})` }}>
-            <h1>{title}</h1>
-            <p>{description}</p>
+        <div style={{ backgroundImage: `url(https://app.contentful.com/spaces/747xs9w91eto/assets/32wKwKnm7LIkCAQwRvpMqI?focusedField=file)` }}>
+            <h1>Home</h1>
+            <p>This website is to handle billing procedures for charging electric vehicles in domicile stations.
+</p>
             <div>
                 {sections && sections.map((section, index) => (
                     <div key={index}>
