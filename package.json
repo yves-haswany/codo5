@@ -38,8 +38,15 @@
         "react-dom": "^18.3.1",
         "rimraf": "latest",
         "snyk": "^1.1294.3",
+<<<<<<< HEAD
         "stackbit": "0.0.0",
         "unique-names-generator": "^4.7.1"
+=======
+        "puppeteer": "latest",
+       "unique-names-generator": "^4.7.1",
+        "markdown-to-jsx": "^7.7.2",
+        "stackbit": "0.0.0"
+>>>>>>> 81fcec6f62ad52010cb6c46d9412162c42402f92
     },
     "devDependencies": {
         "@stackbit/cms-contentful": "^1.0.30",

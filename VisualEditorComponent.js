@@ -1,11 +1,26 @@
-import { useContentfulLivePreview } from '@contentful/live-preview'; // Import the Contentful live preview hook
+import { useState } from 'react';
+import { useContentfulLivePreview } from '@contentful/live-preview';
 
-// Component to render live preview content from Contentful
 function VisualEditorComponent({ contentId, fieldName }) {
-  console.log("[VisualEditorComponent] Rendering content with ID:", contentId, "and field name:", fieldName);
-  const content = useContentfulLivePreview(contentId, fieldName); // Use the Contentful live preview hook
-  console.log("[VisualEditorComponent] Live preview content:", content);
-  return <div>{content}</div>; // Render the content in a div element
+    const [editableContent, setEditableContent] = useState('');
+
+    const handleContentChange = (e) => {
+        setEditableContent(e.target.value);
+    };
+
+    const content = useContentfulLivePreview(contentId, fieldName);
+
+    return (
+        <div>
+            <input 
+                type="text" 
+                value={editableContent} 
+                onChange={handleContentChange} 
+                placeholder="Edit content here" 
+            />
+            <div>{content}</div>
+        </div>
+    );
 }
 
-export default VisualEditorComponent; // Export the component as default
+export default VisualEditorComponent;

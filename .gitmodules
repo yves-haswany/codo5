@@ -1,3 +1,7 @@
 [submodule "codo5"]
     path = codo5
+<<<<<<< HEAD
     url = https://github.com/yves.haswany/codo5.git
+=======
+    url = https://github.com/yves-haswany/codo5
+>>>>>>> 81fcec6f62ad52010cb6c46d9412162c42402f92

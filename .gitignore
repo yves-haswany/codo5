@@ -40,4 +40,5 @@ yarn-error.log*
 .netlify
 #env
 .env
+codo5
 /codo5

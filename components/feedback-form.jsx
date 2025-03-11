@@ -6,14 +6,22 @@ import { Card } from './card';
 export function FeedbackForm() {
     const [status, setStatus] = useState(null);
     const [error, setError] = useState(null);
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         try {
             setStatus('pending');
             setError(null);
-            const myForm = event.target;
-            const formData = new FormData(myForm);
             const res = await fetch('/__forms.html', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -39,11 +47,42 @@ export function FeedbackForm() {
                     onSubmit={handleFormSubmit}
                     className="text-black flex flex-col gap-3 align-center"
                 >
-                    <input type="hidden" name="form-name" value="feedback" />
-                    <input name="name" type="text" placeholder="Name" required className="input input-bordered" />
-                    <input name="email" type="text" placeholder="Email (optional)" className="input input-bordered" />
-                    <input name="message" type="text" placeholder="Message" required className="input input-bordered" />
-                    <button className="btn btn-primary" type="submit" disabled={status === 'pending'}>
+                    <input 
+                        type="hidden" 
+                        name="form-name" 
+                        value="feedback" 
+                    />
+                    <input 
+                        name="name" 
+                        type="text" 
+                        placeholder="Name" 
+                        required 
+                        className="input input-bordered" 
+                        value={formData.name} 
+                        onChange={handleInputChange} 
+                    />
+                    <input 
+                        name="email" 
+                        type="text" 
+                        placeholder="Email (optional)" 
+                        className="input input-bordered" 
+                        value={formData.email} 
+                        onChange={handleInputChange} 
+                    />
+                    <input 
+                        name="message" 
+                        type="text" 
+                        placeholder="Message" 
+                        required 
+                        className="input input-bordered" 
+                        value={formData.message} 
+                        onChange={handleInputChange} 
+                    />
+                    <button 
+                        className="btn btn-primary" 
+                        type="submit" 
+                        disabled={status === 'pending'}
+                    >
                         Submit
                     </button>
                     {status === 'ok' && (
@@ -81,7 +120,8 @@ function SuccessIcon() {
         </svg>
     );
 }
-function ErrorIcon(success) {
+
+function ErrorIcon() {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
