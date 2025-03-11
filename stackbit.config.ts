@@ -25,6 +25,7 @@ export default defineStackbitConfig({
             name: "homePage",
             type: "page",
             urlPath: "/{slug}",
+        }
     ],
     siteMap: ({ documents, models }) => {
         const pageModels = models.filter(m => m.type === "page");
