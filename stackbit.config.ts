@@ -1,6 +1,8 @@
 import { defineStackbitConfig,SiteMapEntry } from '@stackbit/types';
 import { ContentfulContentSource } from '@stackbit/cms-contentful';
+import dotenv from 'dotenv';
 
+dotenv.config();
 export default defineStackbitConfig({
     stackbitVersion: "~0.6.0",
     nodeVersion: "20.18.1",
