@@ -1,3 +1,4 @@
+
 import { defineStackbitConfig,SiteMapEntry } from '@stackbit/types';
 import { ContentfulContentSource } from '@stackbit/cms-contentful';
 import dotenv from 'dotenv';
@@ -24,14 +25,6 @@ export default defineStackbitConfig({
             name: "homePage",
             type: "page",
             urlPath: "/{slug}",
-            fields: [
-                {
-                    id: 'description',
-                    name: 'Description',
-                    type: 'RichText'
-                    // Removed validations property
-                }
-            ]
         }
     ],
     siteMap: ({ documents, models }) => {
