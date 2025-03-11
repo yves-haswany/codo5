@@ -1,12 +1,34 @@
-// src/index.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';  // Optional: Add your global styles
-import App from './App';  // Import the App component
+import './index.css';
+import App from './App';
+
+// Function to fetch content from Contentful
+const fetchContentfulEntry = async (entryId) => {
+    const response = await fetch(`https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/${process.env.CONTENTFUL_ENVIRONMENT}/entries/${entryId}`, {
+        headers: {
+            Authorization: `Bearer ${process.env.CONTENTFUL_MANAGEMENT_TOKEN}`
+        }
+    });
+    return response.json();
+};
+
+const Root = () => {
+    const [content, setContent] = useState(null);
+
+    useEffect(() => {
+        const entryId = '4SElkz101oeeuUyTB7Djy2'; // The entry ID you want to load
+        fetchContentfulEntry(entryId).then(data => setContent(data));
+    }, []);
+
+    return (
+        <React.StrictMode>
+            <App content={content} />
+        </React.StrictMode>
+    );
+};
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />  {/* Render the App component */}
-  </React.StrictMode>,
-  document.getElementById('root')  // This will target the root element in your HTML
+    <Root />,
+    document.getElementById('root')
 );
