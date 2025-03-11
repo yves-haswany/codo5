@@ -27,31 +27,30 @@ export default defineStackbitConfig({
             urlPath: "/{slug}",
         }
     ],
-    siteMap: ({ documents, models }) => {
-        const pageModels = models.filter(m => m.type === "page");
-        return documents
-            .filter(d => pageModels.some(m => m.name === d.modelName))
-            .map(document => {
-                const urlModel = (() => {
-                    switch (document.modelName) {
-                        case 'homePage':
-                            return 'page';
-                        case 'otherPage':
-                            return 'otherPage';
-                        default:
-                            return null;
-                    }
-                });
-                if (!urlModel) return null;
-                return {
-                    stableId: document.id,
-                    urlPath: `/${urlModel}/${document.id}`,
-                    document,
-                    isHomePage: document.modelName === 'homePage',
-                };
-            })
-            .filter(Boolean) as SiteMapEntry[];
-    },
-   
+   siteMap: ({ documents, models }) => {
+    const pageModels = models.filter(m => m.type === "page");
+    return documents
+        .filter(d => pageModels.some(m => m.name === d.modelName))
+        .map(document => {
+            const urlModel = (() => {
+                switch (document.modelName) {
+                    case 'homePage':
+                        return 'home';
+                    case 'otherPage':
+                        return 'other';
+                    default:
+                        return null;
+                }
+            })();
+            if (!urlModel) return null;
+            return {
+                stableId: document.id,
+                urlPath: `/${urlModel}/${document.fields.slug}`, // Use the slug field
+                document,
+                isHomePage: document.modelName === 'homePage',
+            };
+        })
+        .filter(Boolean) as SiteMapEntry[];
+},
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
 });
