@@ -1,4 +1,5 @@
-import { defineStackbitConfig, SiteMapEntry } from '@stackbit/types';
+stackbit.config.ts
+import { defineStackbitConfig,SiteMapEntry } from '@stackbit/types';
 import { ContentfulContentSource } from '@stackbit/cms-contentful';
 import dotenv from 'dotenv';
 
@@ -15,6 +16,7 @@ export default defineStackbitConfig({
             environment: process.env.CONTENTFUL_ENVIRONMENT! || 'master',
             previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN!,
             accessToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!,
+
             useWebhookForContentUpdates: true
         })
     ],
@@ -23,14 +25,6 @@ export default defineStackbitConfig({
             name: "homePage",
             type: "page",
             urlPath: "/{slug}",
-            fields: [
-                {
-                    id: 'description',
-                    name: 'Description',
-                    type: 'RichText'
-                }
-            ]
-        }
     ],
     siteMap: ({ documents, models }) => {
         const pageModels = models.filter(m => m.type === "page");
@@ -46,7 +40,7 @@ export default defineStackbitConfig({
                         default:
                             return null;
                     }
-                })();
+                });
                 if (!urlModel) return null;
                 return {
                     stableId: document.id,
@@ -57,5 +51,6 @@ export default defineStackbitConfig({
             })
             .filter(Boolean) as SiteMapEntry[];
     },
+   
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
 });
