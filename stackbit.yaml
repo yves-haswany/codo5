@@ -14,7 +14,7 @@ contentful:
   models:
   homepage:
     type: page
-    label: Home page
+    label: Home
     contentType: homePage  # Matches your Contentful content type ID
     urlPath: '/'  # Assumes the homepage is at the root URL
     fields:
