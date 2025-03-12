@@ -1,22 +1,22 @@
 stackbitVersion: ~0.6.0
 ssgName: nextjs
-nodeVersion: '20.18.1'  # Updated to a modern version
+nodeVersion: '16'
 publishDir: out
 cacheDir: /temp/.stackbit/cache
 
 cmsName: contentful
 contentful:
   spaceId: 747xs9w91eto
-  environment: master  # Adjust if using a different environment
+  environment: master
   previewToken: WjgpyvAVNMdPUpFLxexmj1QRFZLmy2J64cc8sdvL2r0
   managementToken: ${CONTENTFUL_MANAGEMENT_TOKEN}
 
-  models:
+models:
   homepage:
     type: page
-    label: Home
-    contentType: homePage  # Matches your Contentful content type ID
-    urlPath: '/'  # Assumes the homepage is at the root URL
+    label: Home page
+    contentType: homePage
+    urlPath: '/'
     fields:
       - name: title
         type: string
@@ -27,6 +27,6 @@ contentful:
       - name: description
         type: string
         label: Description
-      - name: featured-image
-        type : media
-        label : Featured Image
+      - name: featuredImage  # Adjust this to match your Contentful field name
+        type: media
+        label: Featured Image
