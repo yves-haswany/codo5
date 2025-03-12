@@ -27,7 +27,7 @@ export default defineStackbitConfig({
             urlPath: "/{slug}",
         }
     ],
-   siteMap: ({ documents, models }) => {
+  siteMap: ({ documents, models }) => {
     const pageModels = models.filter(m => m.type === "page");
     return documents
         .filter(d => pageModels.some(m => m.name === d.modelName))
@@ -45,7 +45,7 @@ export default defineStackbitConfig({
             if (!urlModel) return null;
             return {
                 stableId: document.id,
-                urlPath: `/${urlModel}/${document.fields.slug}`, // Use the slug field
+                urlPath: urlModel === 'home' ? '/' : `/${urlModel}/${document.fields.slug}`, // Redirect homePage to root
                 document,
                 isHomePage: document.modelName === 'homePage',
             };
