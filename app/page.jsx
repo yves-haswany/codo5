@@ -43,6 +43,18 @@ export default function Page() {
                 >
                     Go to the home page
                 </Link>
+                <Link
+                    href="https://example.com/about"
+                    className="btn btn-lg btn-secondary sm:btn-wide"
+                >
+                    About Us
+                </Link>
+                <Link
+                    href="https://example.com/contact"
+                    className="btn btn-lg btn-secondary sm:btn-wide"
+                >
+                    Contact Us
+                </Link>
             </section>
             {!!ctx && (
                 <section className="flex flex-col gap-4">
