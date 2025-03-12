@@ -1,0 +1,32 @@
+stackbitVersion: ~0.6.0
+ssgName: nextjs
+nodeVersion: '16'  # Updated to a modern version
+publishDir: out
+cacheDir: /temp/.stackbit/cache
+
+cmsName: contentful
+contentful:
+  spaceId: 747xs9w91eto
+  environment: master  # Adjust if using a different environment
+  previewToken: WjgpyvAVNMdPUpFLxexmj1QRFZLmy2J64cc8sdvL2r0
+  managementToken: $ {CONTENTFUL_MANAGEMENT_TOKEN}
+
+  models:
+  homepage:
+    type: page
+    label: Home page
+    contentType: homePage  # Matches your Contentful content type ID
+    urlPath: '/'  # Assumes the homepage is at the root URL
+    fields:
+      - name: title
+        type: string
+        label: Title
+      - name: slug
+        type: string
+        label: Slug
+      - name: description
+        type: string
+        label: Description
+      - name: featured-image
+        type : media
+        label : Featured Image

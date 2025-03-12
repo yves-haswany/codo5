@@ -24,34 +24,33 @@ export default defineStackbitConfig({
         {
             name: "homePage",
             type: "page",
-            urlPath: "/{slug}",
+            urlPath: "/home-page",
         }
     ],
-    siteMap: ({ documents, models }) => {
-        const pageModels = models.filter(m => m.type === "page");
-        return documents
-            .filter(d => pageModels.some(m => m.name === d.modelName))
-            .map(document => {
-                const urlModel = (() => {
-                    switch (document.modelName) {
-                        case 'Page':
-                            return 'page';
-                        case 'otherPage':
-                            return 'otherPage';
-                        default:
-                            return null;
-                    }
-                });
-                if (!urlModel) return null;
-                return {
-                    stableId: document.id,
-                    urlPath: `/${urlModel}/${document.id}`,
-                    document,
-                    isHomePage: document.modelName === 'homePage',
-                };
-            })
-            .filter(Boolean) as SiteMapEntry[];
-    },
-   
+  siteMap: ({ documents, models }) => {
+    const pageModels = models.filter(m => m.type === "page");
+    return documents
+        .filter(d => pageModels.some(m => m.name === d.modelName))
+        .map(document => {
+            const urlModel = (() => {
+                switch (document.modelName) {
+                    case 'homePage':
+                        return 'home';
+                    case 'otherPage':
+                        return 'other';
+                    default:
+                        return null;
+                }
+            })();
+            if (!urlModel) return null;
+            return {
+                stableId: document.id,
+                urlPath: urlModel === 'home' ? '/' : `/${urlModel}/${document.fields.slug}`, // Redirect homePage to root
+                document,
+                isHomePage: document.modelName === 'homePage',
+            };
+        })
+        .filter(Boolean) as SiteMapEntry[];
+},
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
 });
