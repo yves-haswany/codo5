@@ -1,6 +1,6 @@
 stackbitVersion: ~0.6.0
 ssgName: nextjs
-nodeVersion: '16'  # Updated to a modern version
+nodeVersion: '20.18.1'  # Updated to a modern version
 publishDir: out
 cacheDir: /temp/.stackbit/cache
 
@@ -14,7 +14,7 @@ contentful:
   models:
   homepage:
     type: page
-    label: Home page
+    label: Home
     contentType: homePage  # Matches your Contentful content type ID
     urlPath: '/'  # Assumes the homepage is at the root URL
     fields:
