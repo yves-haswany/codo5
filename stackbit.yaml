@@ -189,8 +189,8 @@ models:
                 items:
                   type: model
                   models:
-                    - object_puqom6vs0w
-                    - object_us19v6bx0n
+                    - object_0es0ak1x1c
+                    - object_l2a3k89o0b
   stackbit:
     type: data
     label: Stackbit
@@ -1403,7 +1403,7 @@ models:
                   - type: string
                     name: token
                     label: Token
-  object_puqom6vs0w:
+  object_0es0ak1x1c:
     type: object
     label: Object 1
     fields:
@@ -1420,7 +1420,7 @@ models:
           - type: string
             name: node-version
             label: Node Version
-  object_us19v6bx0n:
+  object_l2a3k89o0b:
     type: object
     label: Object 2
     fields:
