@@ -1,6 +1,6 @@
 stackbitVersion: ~0.6.0
 ssgName: nextjs
-nodeVersion: '16'  # Updated to a modern version
+nodeVersion: '20.18.1'  # Updated to a modern version
 publishDir: out
 cacheDir: /temp/.stackbit/cache
 
