@@ -45,7 +45,7 @@ export default defineStackbitConfig({
             if (!urlModel) return null;
             return {
                 stableId: document.id,
-                urlPath: urlModel === 'home' ? '/' : `/${urlModel}/${document.fields.slug}`, // Redirect homePage to root
+                urlPath: `/${urlModel}/${document.fields.slug}`, // Use the slug field
                 document,
                 isHomePage: document.modelName === 'homePage',
             };
