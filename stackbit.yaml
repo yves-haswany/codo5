@@ -7,6 +7,22 @@ publishDir: out
 dataDir: ''
 cacheDir: /temp/.stackbit/cache
 models:
+ homePage:
+    type: page
+    label: Home
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: slug
+        Label: Slug
+      - type: richText
+        name: description
+        label: Description
+      - type: image
+        name: featuredImage
+        label: Featured Image
   quotes:
     type: data
     label: Quotes
