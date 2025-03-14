@@ -37,7 +37,7 @@ status = 200
   q = ":quality"
 
 [[redirects]]
-  from = "/*"
+  from = "/.netlify/images?url=:url&w=:width&q=:quality"
   to = "/index.js"
   status = 200
   [redirects.query]
