@@ -24,7 +24,7 @@ export default defineStackbitConfig({
         {
             name: "homePage",
             type: "page",
-            urlPath: "/{slug}",
+            urlPath: "/{document.slug}",
         }
     ],
   siteMap: ({ documents, models }) => {
