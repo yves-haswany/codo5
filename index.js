@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { BrowserRouter as Router, Route, useParams } from 'react-router-dom';
+import { BrowserRouter as Router, Route, useParams, Link } from 'react-router-dom';
 
 // Function to fetch content from Contentful
 const fetchContentfulEntry = async (slug) => {
@@ -26,8 +26,27 @@ const ContentPage = () => {
     return <App content={content} />;
 };
 
+const NavigationBar = () => (
+    <nav>
+        <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about-us">About Us</Link></li>
+            <li><Link to="/contact-us">Contact Us</Link></li>
+        </ul>
+    </nav>
+);
+
+const HomePage = () => (
+    <div>
+        <NavigationBar />
+        <h1>Welcome to the Home Page</h1>
+        {/* Add any additional content for the home page here */}
+    </div>
+);
+
 const Root = () => (
     <Router>
+        <Route exact path="/" component={HomePage} />
         <Route path="/:slug" component={ContentPage} />
     </Router>
 );

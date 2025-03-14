@@ -36,6 +36,14 @@ status = 200
   w = ":width"
   q = ":quality"
 
+[[redirects]]
+ from = "/*"
+  to = "/index.js"
+  status = 200
+  [redirects.query]
+  url = ":url"
+  w = ":width"
+  q = ":quality"
 [context]
   [context.branch-deploy]
   [context.preview]
