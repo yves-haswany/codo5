@@ -32,7 +32,7 @@ const ctx = getNetlifyContext();
 
 export default function Page() {
     return (
-        <main className="flex flex-col gap-8 sm:gap-16">
+        <main className="flex flex-col gap-8 sm:gap-12">
             <section className="flex flex-col items-start gap-3 sm:gap-4">
                 <ContextAlert />
                 <h1 className="mb-0">Codo-Invoicing and billing for electric vehicle recharging</h1>
