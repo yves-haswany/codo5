@@ -21,20 +21,20 @@ export default defineStackbitConfig({
     ],
     modelExtensions: [
         {
-            name: "page",
+            name: "homePage",
             type: "page",
             urlPath: "/{slug}",
         }
     ],
-    siteMap: ({ documents, models }) => {
+  /*siteMap: ({ documents, models }) => {
         const pageModels = models.filter(m => m.type === "page");
         return documents
             .filter(d => pageModels.some(m => m.name === d.modelName))
             .map(document => {
                 const urlModel = (() => {
                     switch (document.modelName) {
-                        case 'Page':
-                            return 'page';
+                        case 'homePage':
+                            return 'home';
                         case 'otherPage':
                             return 'otherPage';
                         default:
@@ -53,4 +53,4 @@ export default defineStackbitConfig({
     },
    
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
-});
+});*/
