@@ -21,7 +21,7 @@ export default defineStackbitConfig({
     ],
     modelExtensions: [
         {
-            name: "homePage",
+            name: "page",
             type: "page",
             urlPath: "/{slug}",
         }
