@@ -26,7 +26,7 @@ export default defineStackbitConfig({
             urlPath: "/{slug}",
         }
     ],
-  /*siteMap: ({ documents, models }) => {
+  siteMap: ({ documents, models }) => {
         const pageModels = models.filter(m => m.type === "page");
         return documents
             .filter(d => pageModels.some(m => m.name === d.modelName))
@@ -44,7 +44,7 @@ export default defineStackbitConfig({
                 if (!urlModel) return null;
                 return {
                     stableId: document.id,
-                    urlPath: `/${urlModel}/${document.id}`,
+                    urlPath: `/${urlModel}/${document.fields.slug}`,
                     document,
                     isHomePage: document.modelName === 'homePage',
                 };
@@ -53,4 +53,4 @@ export default defineStackbitConfig({
     },
    
     postInstallCommand: "npm i --no-save @stackbit/types @stackbit/cms-contentful"
-});*/
+});
