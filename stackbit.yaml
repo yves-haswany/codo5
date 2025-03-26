@@ -11,7 +11,7 @@ models:
   homePage:
     type: page
     label: Home
-    layout:homePage
+    layout: homePage
     fields:
       - type: string
         name: title
