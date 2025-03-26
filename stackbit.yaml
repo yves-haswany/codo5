@@ -28,7 +28,7 @@ models:
   quotes:
     type: data
     label: Quotes
-    file: codo5\data\quotes.json
+    file: data\quotes.json
     isList: true
     items:
       type: object
@@ -52,7 +52,7 @@ models:
   config:
     type: data
     label: Config
-    file: codo5\netlify\Config\config.json
+    file: netlify\Config\config.json
     fields:
       - type: boolean
         name: telemetryDisabled
