@@ -7,7 +7,7 @@ publishDir: out
 dataDir: ''
 cacheDir: /temp/.stackbit/cache
 
-models:
+modelExtensions:
   homePage:
     type: page
     label: Home
