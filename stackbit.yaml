@@ -49,6 +49,7 @@ models:
           name: year
           label: Year
           subtype: int
+
   config:
     type: data
     label: Config
@@ -87,6 +88,7 @@ models:
                   - type: string
                     name: token
                     label: Token
+
   netlify:
     type: data
     label: Netlify
@@ -164,6 +166,7 @@ models:
                 - type: string
                   name: q
                   label: Q
+
   renovate:
     type: data
     label: Renovate
@@ -177,6 +180,7 @@ models:
         label: Extends
         items:
           type: string
+
   stackbit_dev:
     type: data
     label: Stackbit Dev
@@ -209,6 +213,7 @@ models:
                   models:
                     - object_ov38t42wus
                     - object_iwx1luejor
+
   stackbit:
     type: data
     label: Stackbit
@@ -232,6 +237,7 @@ models:
       - type: string
         name: cacheDir
         label: Cache Dir
+
   object_ov38t42wus:
     type: object
     label: Object 1
@@ -249,6 +255,7 @@ models:
           - type: string
             name: node-version
             label: Node Version
+
   object_iwx1luejor:
     type: object
     label: Object 2
@@ -278,169 +285,172 @@ models:
           - type: string
             name: CONTENTFUL_MANAGEMENT_TOKEN
             label: CONTENTFUL MANAGEMENT TOKEN
+
   contentfulExport:
-  type: data
-  label: Contentful Export
-  file: contentful-export-747xs9w91eto-master-2025-03-25T18-21-04.json
-  fields:
-    - type: object
-      name: contentTypes
-      label: Content Types
-      fields:
-        - type: string
-          name: id
-          label: ID
-        - type: string
-          name: name
-          label: Name
-    - type: object
-      name: tags
-      label: Tags
-      fields:
-        - type: string
-          name: id
-          label: ID
-        - type: string
-          name: name
-          label: Name
-    - type: object
-      name: editorInterfaces
-      label: Editor Interfaces
-      fields:
-        - type: string
-          name: id
-          label: ID
-        - type: string
-          name: name
-          label: Name
-    - type: object
-      name: entries
-      label: Entries
-      fields:
-        - type: string
-          name: id
-          label: ID
-        - type: string
-          name: name
-          label: Name
-    - type: object
-      name: assets
-      label: Assets
-      fields:
-        - type: string
-          name: id
-          label: ID
-        - type: string
-          name: name
-          label: Name
-    - type: object
-      name: locales
-      label: Locales
-      fields:
-        - type: string
-          name: id
-          label: ID
-        - type: string
-          name: name
-          label: Name
-    - type: object
-      name: webhooks
-      label: Webhooks
-      fields:
-        - type: string
-          name: id
-          label: ID
-        - type: string
-          name: name
-          label: Name
-    - type: object
-      name: roles
-      label: Roles
-      fields:
-        - type: string
-          name: id
-          label: ID
-        - type: string
-          name: name
-          label: Name
+    type: data
+    label: Contentful Export
+    file: contentful-export-747xs9w91eto-master-2025-03-25T18-21-04.json
+    fields:
+      - type: object
+        name: contentTypes
+        label: Content Types
+        fields:
+          - type: string
+            name: id
+            label: ID
+          - type: string
+            name: name
+            label: Name
+      - type: object
+        name: tags
+        label: Tags
+        fields:
+          - type: string
+            name: id
+            label: ID
+          - type: string
+            name: name
+            label: Name
+      - type: object
+        name: editorInterfaces
+        label: Editor Interfaces
+        fields:
+          - type: string
+            name: id
+            label: ID
+          - type: string
+            name: name
+            label: Name
+      - type: object
+        name: entries
+        label: Entries
+        fields:
+          - type: string
+            name: id
+            label: ID
+          - type: string
+            name: name
+            label: Name
+      - type: object
+        name: assets
+        label: Assets
+        fields:
+          - type: string
+            name: id
+            label: ID
+          - type: string
+            name: name
+            label: Name
+      - type: object
+        name: locales
+        label: Locales
+        fields:
+          - type: string
+            name: id
+            label: ID
+          - type: string
+            name: name
+            label: Name
+      - type: object
+        name: webhooks
+        label: Webhooks
+        fields:
+          - type: string
+            name: id
+            label: ID
+          - type: string
+            name: name
+            label: Name
+      - type: object
+        name: roles
+        label: Roles
+        fields:
+          - type: string
+            name: id
+            label: ID
+          - type: string
+            name: name
+            label: Name
+
   jsconfig:
-  type: data
-  label: JS Config
-  file: jsconfig.json
-  fields:
-    - type: object
-      name: compilerOptions
-      label: Compiler Options
-      fields:
-        - type: string
-          name: target
-          label: Target
-        - type: string
-          name: module
-          label: Module
+    type: data
+    label: JS Config
+    file: jsconfig.json
+    fields:
+      - type: object
+        name: compilerOptions
+        label: Compiler Options
+        fields:
+          - type: string
+            name: target
+            label: Target
+          - type: string
+            name: module
+            label: Module
+
   netlifyAutocompletion:
-  type: data
-  label: Netlify Autocompletion
-  file: netlify\Config\autocompletion.json
-  fields:
-    - type: object
-      name: api
-      label: API
-      fields:
-        - type: string
-          name: blobs
-          label: Blobs
-        - type: string
-          name: build
-          label: Build
-        - type: string
-          name: completion
-          label: Completion
-        - type: string
-          name: deploy
-          label: Deploy
-        - type: string
-          name: dev
-          label: Dev
-        - type: string
-          name: env
-          label: Env
-        - type: string
-          name: functions
-          label: Functions
-        - type: string
-          name: integration
-          label: Integration
-        - type: string
-          name: link
-          label: Link
-        - type: string
-          name: login
-          label: Login
-        - type: string
-          name: logout
-          label: Logout
-        - type: string
-          name: open
-          label: Open
-        - type: string
-          name: serve
-          label: Serve
-        - type: string
-          name: sites
-          label: Sites
-        - type: string
-          name: status
-          label: Status
-        - type: string
-          name: switch
-          label: Switch
-        - type: string
-          name: unlink
-          label: Unlink
-        - type: string
-          name: watch
-          label: Watch
-        - type: string
-          name: logs
-          label: Logs
+    type: data
+    label: Netlify Autocompletion
+    file: netlify\Config\autocompletion.json
+    fields:
+      - type: object
+        name: api
+        label: API
+        fields:
+          - type: string
+            name: blobs
+            label: Blobs
+          - type: string
+            name: build
+            label: Build
+          - type: string
+            name: completion
+            label: Completion
+          - type: string
+            name: deploy
+            label: Deploy
+          - type: string
+            name: dev
+            label: Dev
+          - type: string
+            name: env
+            label: Env
+          - type: string
+            name: functions
+            label: Functions
+          - type: string
+            name: integration
+            label: Integration
+          - type: string
+            name: link
+            label: Link
+          - type: string
+            name: login
+            label: Login
+          - type: string
+            name: logout
+            label: Logout
+          - type: string
+            name: open
+            label: Open
+          - type: string
+            name: serve
+            label: Serve
+          - type: string
+            name: sites
+            label: Sites
+          - type: string
+            name: status
+            label: Status
+          - type: string
+            name: switch
+            label: Switch
+          - type: string
+            name: unlink
+            label: Unlink
+          - type: string
+            name: watch
+            label: Watch
+          - type: string
+            name: logs
+            label: Logs
