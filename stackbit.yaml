@@ -167,7 +167,7 @@ models:
   renovate:
     type: data
     label: Renovate
-    file: codo5\renovate.json
+    file: renovate.json
     fields:
       - type: string
         name: $schema
@@ -180,7 +180,7 @@ models:
   stackbit_dev:
     type: data
     label: Stackbit Dev
-    file: codo5\stackbit-dev.yml
+    file: stackbit-dev.yml
     fields:
       - type: string
         name: name
@@ -212,7 +212,7 @@ models:
   stackbit:
     type: data
     label: Stackbit
-    file: codo5\stackbit.yaml
+    file: stackbit.yaml
     fields:
       - type: string
         name: stackbitVersion
