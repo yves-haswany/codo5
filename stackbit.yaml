@@ -232,31 +232,6 @@ models:
       - type: string
         name: cacheDir
         label: Cache Dir
-  quotes_1:
-    type: data
-    label: Quotes 1
-    file: data\quotes.json
-    isList: true
-    items:
-      type: object
-      fields:
-        - type: text
-          name: text
-          label: Text
-        - type: string
-          name: character
-          label: Character
-        - type: string
-          name: playedBy
-          label: Played By
-        - type: string
-          name: film
-          label: Film
-        - type: number
-          name: year
-          label: Year
-          subtype: int
-
   object_ov38t42wus:
     type: object
     label: Object 1
