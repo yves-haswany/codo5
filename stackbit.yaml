@@ -90,7 +90,7 @@ models:
   netlify:
     type: data
     label: Netlify
-    file: codo5\netlify.toml
+    file: netlify.toml
     fields:
       - type: object
         name: dev
