@@ -378,7 +378,7 @@ models:
         - type: string
           name: module
           label: Module
- netlifyAutocompletion:
+  netlifyAutocompletion:
   type: data
   label: Netlify Autocompletion
   file: netlify\Config\autocompletion.json
