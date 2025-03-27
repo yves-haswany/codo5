@@ -297,6 +297,9 @@ models:
           - type: string
             name: target
             label: Target
+          - type: string
+            name: module
+            label: Module
   
   netlifyAutocompletion:
     type: data
