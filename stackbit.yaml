@@ -181,7 +181,8 @@ models:
         label: Extends
         items:
           type: string
- stackbit_dev:
+
+  stackbit_dev:
     type: data
     label: Stackbit Dev
     file: stackbit-dev.yml
