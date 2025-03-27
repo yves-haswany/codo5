@@ -285,21 +285,21 @@ models:
           - type: string
             name: CONTENTFUL_MANAGEMENT_TOKEN
             label: CONTENTFUL MANAGEMENT TOKEN
-  jsconfig:
-    type: data
-    label: JS Config
-    file: jsconfig.json
-    fields:
-      - type: object
-        name: compilerOptions
-        label: Compiler Options
-        fields:
-          - type: string
-            name: target
-            label: Target
-          - type: string
-            name: module
-            label: Module
+ jsconfig:
+  type: data
+  label: JS Config
+  file: jsconfig.json
+  fields:
+    - type: object
+      name: compilerOptions
+      label: Compiler Options
+      fields:
+        - type: string
+          name: target
+          label: Target
+        - type: string
+          name: module
+          label: Module
   
   netlifyAutocompletion:
     type: data
