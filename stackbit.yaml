@@ -7,7 +7,7 @@ publishDir: out
 dataDir: ''
 cacheDir: /temp/.stackbit/cache
 
-modelExtensions:
+models:
   homePage:
     type: page
     label: Home
@@ -181,40 +181,6 @@ modelExtensions:
         label: Extends
         items:
           type: string
-
-  stackbit_dev:
-    type: data
-    label: Stackbit Dev
-    file: stackbit-dev.yml
-    fields:
-      - type: string
-        name: name
-        label: Name
-      - type: list
-        name: 'on'
-        label: 'On'
-        items:
-          type: string
-      - type: object
-        name: jobs
-        label: Jobs
-        fields:
-          - type: object
-            name: build
-            label: Build
-            fields:
-              - type: string
-                name: runs-on
-                label: Runs On
-              - type: list
-                name: steps
-                label: Steps
-                items:
-                  type: model
-                  models:
-                    - object_ov38t42wus
-                    - object_iwx1luejor
-
   stackbit:
     type: data
     label: Stackbit
