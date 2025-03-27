@@ -286,7 +286,7 @@ models:
             name: CONTENTFUL_MANAGEMENT_TOKEN
             label: CONTENTFUL MANAGEMENT TOKEN
 
- contentfulExport:
+  contentfulExport:
   type: data
   label: Contentful Export
   file: contentful-export-747xs9w91eto-master-2025-03-25T18-21-04.json
