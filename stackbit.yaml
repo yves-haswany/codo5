@@ -20,12 +20,18 @@ models:
         name: description
         label: Description
       - type: image
-        name: featueredImage
-        label: Featuered Image
+        name: featuredImage
+        label: Featured Image
       - type: string
         name: slug
         label: Slug
-      
+
+  package:
+    type: data
+    file: package.json   
+  packageLock:
+    type: data
+    file: package-lock.json 
   quotes:
     type: data
     label: Quotes
@@ -53,7 +59,7 @@ models:
 
   config:
     type: data
-    label: Config
+    label: Netlify Config
     file: netlify\Config\config.json
     fields:
       - type: boolean
@@ -87,8 +93,8 @@ models:
                 label: Auth
                 fields:
                   - type: string
-                    name: token
-                    label: Token
+                    name: github
+                    label: Github
 
   netlify:
     type: data
@@ -285,21 +291,24 @@ models:
           - type: string
             name: CONTENTFUL_MANAGEMENT_TOKEN
             label: CONTENTFUL MANAGEMENT TOKEN
- jsconfig:
-  type: data
-  label: JS Config
-  file: jsconfig.json
-  fields:
-    - type: object
-      name: compilerOptions
-      label: Compiler Options
-      fields:
-        - type: string
-          name: target
-          label: Target
-        - type: string
-          name: module
-          label: Module
+  jsconfig:
+    type: data
+    label: JS Config
+    file: jsconfig.json
+    fields:
+      - type: object
+        name: compilerOptions
+        label: Compiler Options
+        fields:
+          - type: string
+            name: target
+            label: Target
+          - type: string
+            name: module
+            label: Module
+          - type: boolean
+            name: strict
+            label: Strict
   
   netlifyAutocompletion:
     type: data
