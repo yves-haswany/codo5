@@ -26,8 +26,10 @@
         "express": "^4.21.2",
         "glob": "^11.0.0",
         "inflight": "^1.0.6",
+        "lmdb": "^2.8.5",
         "lodash.pick": "^4.4.0",
         "lodash.set": "^4.3.2",
+        "markdown-to-jsx": "^7.7.2",
         "nanoid": "^5.0.9",
         "next": "^15.2.3",
         "node": "^23.5.0",
@@ -37,10 +39,8 @@
         "react-dom": "^18.3.1",
         "rimraf": "latest",
         "snyk": "^1.1294.3",
-       "unique-names-generator": "^4.7.1",
-        "markdown-to-jsx": "^7.7.2",
-        "stackbit": "0.0.0"
-
+        "stackbit": "0.0.0",
+        "unique-names-generator": "^4.7.1"
     },
     "devDependencies": {
         "@stackbit/cms-contentful": "^1.0.30",
